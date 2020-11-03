@@ -12,7 +12,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 	</http:request-config>
 	<flow name="worldtimedemoapiFlow" doc:id="1ef25e61-ebb7-46ba-80db-47819c530cd8" >
 		<http:listener doc:name="Listener" doc:id="f7a11a95-708f-4343-b7ae-ed471988c31f" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
-		<http:request method="GET" doc:name="Request" doc:id="084e969e-56ed-4ae0-a329-12ddbf9849bc" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
+		<http:request method="GET" doc:name="RequestToWorldTimeZone" doc:id="084e969e-56ed-4ae0-a329-12ddbf9849bc" config-ref="HTTP_Request_configuration" path="/{region}/{city}">
 			<http:uri-params ><![CDATA[#[output application/java
 ---
 {
