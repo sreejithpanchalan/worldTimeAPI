@@ -6,8 +6,7 @@
 	<groupId>com.mycompany</groupId>
 	<artifactId>worldtimedemoapi</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>mule-application</packaging>
-
+    <packaging>mule</packaging>
 	<name>worldtimedemoapi</name>
 
     <properties>
@@ -35,7 +34,7 @@
 		            <muleVersion>${mule.version}</muleVersion>
 		            <username>${anypoint.username}</username>
 		            <password>${anypoint.password}</password>
-		            <applicationName>mulesoft-jenkins-ci-cd</applicationName>
+		            <applicationName>worldtimedemoapi</applicationName>
 		            <environment>${anypoint.environment}</environment>
 		            <properties>
 		                <key>value</key>
